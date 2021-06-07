@@ -1,24 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
+//Time complexity : O(n)
 int duplicateValue(int nums[], int n)
 {
-    // for(int i = 0; i < n; i++)
-    // {
-    //     for(int j = i+1; j < n; j++)
-    //     {
-    //         if(arr[i] == arr[j])
-    //         {
+    // for(int i = 0; i < n; i++){
+    //     for(int j = i+1; j < n; j++){
+    //         if(arr[i] == arr[j]){
     //             cout<<arr[i];
-    //             break;
-    //         }
-    //     }
-    // }
+    //             break;  }}}
 
 
-    //Or by using Map  
-    map<int, int> mp;
+    //Or by using Map               
+    map<int, int> mp;              //empty map key container
         int ans;
     for (int i = 0; i < n; i++)
     {
@@ -33,6 +27,7 @@ int duplicateValue(int nums[], int n)
         return ans;
 }
 
+//Driven Code
 int main()
 {
     int arr[] = {1,3,5,2,3};
