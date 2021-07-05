@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//Move all -ve element to left side
 int main()
 {
     int a[] = {2, -8, -1, 0, 7, -3};
